@@ -94,3 +94,31 @@ console.log(set)
 
 // Set 的 api 和 Map 是兼容的，就不再赘述了。
 
+// 总结
+// Map —— 是一个带键的数据项的集合。
+//
+// 方法和属性如下：
+//
+// new Map([iterable]) —— 创建 map，可选择带有 [key,value] 对的 iterable（例如数组）来进行初始化。
+// map.set(key, value) —— 根据键存储值，返回 map 自身。
+// map.get(key) —— 根据键来返回值，如果 map 中不存在对应的 key，则返回 undefined。
+// map.has(key) —— 如果 key 存在则返回 true，否则返回 false。
+// map.delete(key) —— 删除指定键对应的值，如果在调用时 key 存在，则返回 true，否则返回 false。
+// map.clear() —— 清空 map 。
+// map.size —— 返回当前元素个数。
+// 与普通对象 Object 的不同点：
+//
+// 任何键、对象都可以作为键。
+// 有其他的便捷方法，如 size 属性。
+// Set —— 是一组唯一值的集合。
+//
+// 方法和属性：
+//
+// new Set([iterable]) —— 创建 set，可选择带有 iterable（例如数组）来进行初始化。
+// set.add(value) —— 添加一个值（如果 value 存在则不做任何修改），返回 set 本身。
+// set.delete(value) —— 删除值，如果 value 在这个方法调用的时候存在则返回 true ，否则返回 false。
+// set.has(value) —— 如果 value 在 set 中，返回 true，否则返回 false。
+// set.clear() —— 清空 set。
+// set.size —— 元素的个数。
+// 在 Map 和 Set 中迭代总是按照值插入的顺序进行的，所以我们不能说这些集合是无序的，但是我们不能对元素进行重新排序，也不能直接按其编号来获取元素。
+
